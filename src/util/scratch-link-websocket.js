@@ -56,7 +56,7 @@ class ScratchLinkWebSocket {
         };
 
         const ws = new WebSocket(`ws://127.0.0.1:20111/${pathname}`);
-        const wss = new WebSocket(`wss://device-manager.scratch.mit.edu:20110/${pathname}`);
+        const wss = new WebSocket(`ws://device-manager.scratch.mit.edu:20110/${pathname}`);
 
         const connectTimeout = setTimeout(() => {
             // neither socket succeeded before the timeout
